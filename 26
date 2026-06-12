@@ -1,0 +1,29 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro valor, n100, n50, n10, n5, n1
+
+		leia(valor)
+
+		n100 = valor / 100
+		valor = valor % 100
+
+		n50 = valor / 50
+		valor = valor % 50
+
+		n10 = valor / 10
+		valor = valor % 10
+
+		n5 = valor / 5
+		valor = valor % 5
+
+		n1 = valor
+
+		escreva("Notas de 100: ", n100)
+		escreva("\nNotas de 50: ", n50)
+		escreva("\nNotas de 10: ", n10)
+		escreva("\nNotas de 5: ", n5)
+		escreva("\nNotas de 1: ", n1)
+	}
+}
