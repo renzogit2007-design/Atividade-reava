@@ -1,0 +1,22 @@
+programa
+{
+	funcao inicio()
+	{
+		real n1, n2, n3, media
+
+		leia(n1, n2, n3)
+
+		media = (n1*3 + n2*4 + n3*3)/10
+
+		escreva("Media = ", media)
+
+		se(media >= 6)
+		{
+			escreva("\nAPROVADO")
+		}
+		senao
+		{
+			escreva("\nREPROVADO")
+		}
+	}
+}
