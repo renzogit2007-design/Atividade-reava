@@ -1,0 +1,28 @@
+programa
+{
+	funcao inicio()
+	{
+		real saldo, credito
+
+		leia(saldo)
+
+		se(saldo <= 200)
+		{
+			credito = 0
+		}
+		senao se(saldo <= 400)
+		{
+			credito = saldo * 0.20
+		}
+		senao se(saldo <= 600)
+		{
+			credito = saldo * 0.30
+		}
+		senao
+		{
+			credito = saldo * 0.40
+		}
+
+		escreva("Credito = ", credito)
+	}
+}
