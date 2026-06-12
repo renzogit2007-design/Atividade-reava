@@ -1,0 +1,70 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro opcao
+		real a, b, c, d, aux
+		real v[4]
+
+		leia(a, b, c, d)
+		leia(opcao)
+
+		v[0] = a
+		v[1] = b
+		v[2] = c
+		v[3] = d
+
+		se(opcao == 1)
+		{
+			para(inteiro i = 0; i < 4; i++)
+			{
+				para(inteiro j = i + 1; j < 4; j++)
+				{
+					se(v[j] < v[i])
+					{
+						aux = v[i]
+						v[i] = v[j]
+						v[j] = aux
+					}
+				}
+			}
+
+			escreva(v[0], " ", v[1], " ", v[2], " ", v[3])
+		}
+		senao se(opcao == 2)
+		{
+			para(inteiro i = 0; i < 4; i++)
+			{
+				para(inteiro j = i + 1; j < 4; j++)
+				{
+					se(v[j] > v[i])
+					{
+						aux = v[i]
+						v[i] = v[j]
+						v[j] = aux
+					}
+				}
+			}
+
+			escreva(v[0], " ", v[1], " ", v[2], " ", v[3])
+		}
+		senao se(opcao == 3)
+		{
+			real maior
+
+			maior = a
+
+			se(b > maior)
+			{
+				maior = b
+			}
+
+			se(c > maior)
+			{
+				maior = c
+			}
+
+			escreva(a, " ", maior, " ", b, " ", c, " ", d)
+		}
+	}
+}
