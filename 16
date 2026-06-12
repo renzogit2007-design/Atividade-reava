@@ -1,0 +1,41 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro codigo, quantidade
+		real preco, total
+
+		leia(codigo, quantidade)
+
+		escolha(codigo)
+		{
+			caso 100:
+				preco = 1.20
+				pare
+
+			caso 101:
+				preco = 1.30
+				pare
+
+			caso 102:
+				preco = 1.50
+				pare
+
+			caso 103:
+				preco = 1.20
+				pare
+
+			caso 104:
+				preco = 1.30
+				pare
+
+			caso 105:
+				preco = 1.00
+				pare
+		}
+
+		total = preco * quantidade
+
+		escreva("Total = R$ ", total)
+	}
+}
