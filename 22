@@ -1,0 +1,35 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro codigo
+		real salario, novoSalario, diferenca, percentual
+
+		leia(salario, codigo)
+
+		escolha(codigo)
+		{
+			caso 101:
+				percentual = 0.10
+				pare
+
+			caso 102:
+				percentual = 0.20
+				pare
+
+			caso 103:
+				percentual = 0.30
+				pare
+
+			caso contrario:
+				percentual = 0.40
+		}
+
+		novoSalario = salario + salario * percentual
+		diferenca = novoSalario - salario
+
+		escreva("Salario antigo = R$ ", salario)
+		escreva("\nNovo salario = R$ ", novoSalario)
+		escreva("\nDiferenca = R$ ", diferenca)
+	}
+}
