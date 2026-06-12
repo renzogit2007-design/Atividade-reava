@@ -1,0 +1,26 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro n, i, j
+		real E, fatorial
+
+		leia(n)
+
+		E = 1
+
+		para(i = 1; i <= n; i++)
+		{
+			fatorial = 1
+
+			para(j = 1; j <= i; j++)
+			{
+				fatorial = fatorial * j
+			}
+
+			E = E + 1 / fatorial
+		}
+
+		escreva("E = ", E)
+	}
+}
