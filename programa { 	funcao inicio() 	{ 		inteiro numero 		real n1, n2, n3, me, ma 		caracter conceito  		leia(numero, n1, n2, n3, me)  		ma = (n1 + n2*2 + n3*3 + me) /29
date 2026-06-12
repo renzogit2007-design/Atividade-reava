@@ -1,0 +1,47 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro numero
+		real n1, n2, n3, me, ma
+		caracter conceito
+
+		leia(numero, n1, n2, n3, me)
+
+		ma = (n1 + n2*2 + n3*3 + me) / 7
+
+		se(ma >= 9)
+		{
+			conceito = 'A'
+		}
+		senao se(ma >= 7.5)
+		{
+			conceito = 'B'
+		}
+		senao se(ma >= 6)
+		{
+			conceito = 'C'
+		}
+		senao se(ma >= 4)
+		{
+			conceito = 'D'
+		}
+		senao
+		{
+			conceito = 'E'
+		}
+
+		escreva("Aluno: ", numero)
+		escreva("\nMedia de aproveitamento: ", ma)
+		escreva("\nConceito: ", conceito)
+
+		se(conceito == 'A' ou conceito == 'B' ou conceito == 'C')
+		{
+			escreva("\nAPROVADO")
+		}
+		senao
+		{
+			escreva("\nREPROVADO")
+		}
+	}
+}
