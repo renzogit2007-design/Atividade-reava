@@ -1,0 +1,18 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro a, b
+
+		leia(a, b)
+
+		se(a % b == 0 ou b % a == 0)
+		{
+			escreva("Sao multiplos")
+		}
+		senao
+		{
+			escreva("Nao sao multiplos")
+		}
+	}
+}
