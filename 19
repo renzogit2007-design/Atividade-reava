@@ -1,0 +1,29 @@
+programa
+{
+	funcao inicio()
+	{
+		real n1, n2, n3, media
+		inteiro opcao
+
+		leia(n1, n2, n3)
+		leia(opcao)
+
+		escolha(opcao)
+		{
+			caso 1:
+				media = (n1+n2+n3)/3
+				escreva("Media = ", media)
+				pare
+
+			caso 2:
+				media = (n1*3+n2*3+n3*4)/10
+				escreva("Media = ", media)
+				pare
+
+			caso 3:
+				media = 3/((1/n1)+(1/n2)+(1/n3))
+				escreva("Media = ", media)
+				pare
+		}
+	}
+}
