@@ -1,0 +1,31 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro n
+
+		leia(n)
+
+		se(n % 2 == 0)
+		{
+			escreva("Par")
+		}
+		senao
+		{
+			escreva("Impar")
+		}
+
+		se(n > 0)
+		{
+			escreva("\nPositivo")
+		}
+		senao se(n < 0)
+		{
+			escreva("\nNegativo")
+		}
+		senao
+		{
+			escreva("\nZero")
+		}
+	}
+}
