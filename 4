@@ -1,0 +1,17 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro totalDias, anos, meses, dias
+
+		leia(totalDias)
+
+		anos = totalDias / 365
+		meses = (totalDias % 365) / 30
+		dias = (totalDias % 365) % 30
+
+		escreva("Anos: ", anos)
+		escreva("\nMeses: ", meses)
+		escreva("\nDias: ", dias)
+	}
+}
