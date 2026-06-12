@@ -1,0 +1,39 @@
+programa
+{
+	funcao inicio()
+	{
+		cadeia codigo
+		inteiro quantidade
+		real preco, total
+
+		leia(codigo, quantidade)
+
+		se(codigo == "ABCD")
+		{
+			preco = 5.30
+		}
+		senao se(codigo == "XYKP")
+		{
+			preco = 6.00
+		}
+		senao se(codigo == "KLMP")
+		{
+			preco = 3.20
+		}
+		senao se(codigo == "QRST")
+		{
+			preco = 2.50
+		}
+		senao
+		{
+			preco = 0
+			escreva("Codigo invalido")
+		}
+
+		se(preco > 0)
+		{
+			total = preco * quantidade
+			escreva("Total = R$ ", total)
+		}
+	}
+}
